@@ -37,10 +37,10 @@ function Footer() {
         <div className={styles.redes}>
           <h2 className={styles.title}>Социални мрежи</h2>
           <Link href={'https://www.facebook.com/hristovioptic'}>
-            <Image src={'/img/icon_facebook.png'} width={35} height={0} />
+            <Image src={'/img/icon_facebook.png'} width={35} height={0} alt={'Image Facebook'} />
           </Link>
           <Link href={'#'}>
-            <Image src={'/img/icon_instagram.png'} width={35} height={0} />
+            <Image src={'/img/icon_instagram.png'} width={35} height={0} alt={'Image Instagram'} />
           </Link>
         </div>
 
