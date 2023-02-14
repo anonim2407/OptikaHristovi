@@ -22,15 +22,31 @@ export default function Home() {
         <div className={`main ${styles.header_imagen}`}>
           <div className={`contenedor ${styles.contenido_header_imagen}`}>
             <h1>Не оставяйте за последният момент!</h1>
-            <Link legacyBehavior href={'/'}><a>Към контакти</a></Link>
+            <Link legacyBehavior href={'/kontakti'}><a>Към контакти</a></Link>
           </div>
         </div>
 
         <main className={styles.main}>
           <section className={`contenedor ${styles.cards}`}>
-            <Cards img={'icon_map.png'} text1={'Варна ул.“Георги Бенковски“ № 50'} text2={'Варна ул.“Дрин“ № 11'} />
-            <Cards img={'icon_time.png'} text1={'Работно време(зимно): 9:30 – 18:30 Събота: 10:00 – 14:30'} text2={'Работно време(зимно): 9:30 – 18:30 Събота: почивен ден'} />
-            <Cards img={'icon_ringer.png'} text1={'тел. 052/606 085; 0899 572 787'} text2={'тел. 052/696 500; 0884 25 96 55'} />
+            <Cards
+              img={'icon_map.png'}
+              text1={'Варна ул.“Георги Бенковски“ №50'}
+              text2={'Варна ул.“Дрин“ № 11'}
+            />
+            <Cards
+              img={'icon_time.png'}
+              text1={'Работно време(зимно): 9:30 – 18:30'}
+              text11={' Събота: 10:00 – 14:30'}
+              text2={'Работно време(зимно): 9:30 – 18:30 '}
+              text22={'Събота: почивен ден'}
+            />
+            <Cards
+              img={'icon_ringer.png'}
+              text1={'тел. 052/606 085; '}
+              text11={'0899 572 787'}
+              text2={`тел. 052/696 500;`}
+              text22={'0884 25 96 55'}
+            />
           </section>
 
 

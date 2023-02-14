@@ -56,6 +56,7 @@
 /* ========= NAVEGACION =============*/
 
 .nav {
+
   overflow: hidden;
   z-index: 100;
   background-color: #fff;
@@ -66,14 +67,20 @@
   transition-property: width;
   transition-duration: 0.5s;
 }
-.nav.show {
-  
-  height: 60rem;
+nav.show {
+  position: fixed;
+  height: auto;
+  top: 6rem;
   width: 70%;
   opacity: 1;
   bottom: 0rem;
   overflow-y: scroll;
   scroll-behavior: auto;
+}
+@media (min-width: 768px) {
+    .nav.show{
+      top: 8rem;
+    }
 }
 
 .nav {

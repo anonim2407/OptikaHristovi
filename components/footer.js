@@ -27,10 +27,12 @@ function Footer() {
 
         <div className={styles.centers}>
           <h2 className={styles.title}>Очни центрове</h2>
-          <p>Варна ул.“Георги Бенковски“ № 50</p>
-          <p>тел. 052/606 085; 0899 572 787</p>
-          <p>Варна ул.“Дрин“ № 11</p>
-          <p>тел. 052/696 500; 0884 25 96 55</p>
+          <p className={styles.bolder}>Варна ул.“Георги Бенковски“ №50</p>
+          <p style={{marginTop:0}}>тел. 052/606 085;</p>
+          <p style={{marginTop:0}}>0899 572 787</p>
+          <p style={{marginTop:20}}>Варна ул.“Дрин“ № 11</p>
+          <p style={{marginTop:0}}>тел. 052/696 500;</p>
+          <p style={{marginTop:0}}>0884 25 96 55</p>
         </div>
 
 
