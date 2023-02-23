@@ -1,0 +1,93 @@
+.contenido {
+  width: auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  background-color: rgba(255,255,255, 0.2);
+  backdrop-filter: blur(12px);
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .contenido {
+    flex-direction: row;
+  }
+}
+
+.ap1 {
+  position: absolute;
+  top: -7rem;
+  z-index: 1;
+  left: 0;
+  background-color: rgb(255, 0, 0);
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+  font-weight: 900;
+}
+
+.texto {
+  z-index: 3;
+  line-height: 5rem;
+  text-align: center;
+  font-weight: 900;
+  font-style: oblique;
+  text-transform: uppercase;
+  letter-spacing: 6px;
+}
+.ap1,
+.ap2,
+.ap3,
+.ap4,
+.ap5 {
+  margin: 0;
+}
+
+.ap2 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+.ap3 {
+  font-size: 2rem;
+  color: white;
+}
+.ap4 {
+  font-size: 3rem;
+  color: var(--primary);
+}
+.ap5 {
+  color: white;
+}
+
+@media (min-width: 768px) {
+    .ap1,
+.ap2,
+.ap3,
+.ap4,
+.ap5 {
+ padding: 1rem 0;
+}
+  .ap1 {
+    left: -15rem;
+    width: 20rem;
+    height: 20rem;
+    font-size: 6rem;
+  }
+  .ap2 {
+    font-size: 6rem;
+  }
+  .ap3 {
+    font-size: 4rem;
+    color: white;
+  }
+  .ap4 {
+    font-size: 6rem;
+  }
+  .ap5 {
+    color: white;
+  }
+}

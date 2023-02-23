@@ -1,4 +1,4 @@
-.header_imagen {
+/* .header_imagen {
   --opacidad-negro: 0.3;
   background-image: linear-gradient(
       rgba(0, 0, 0, var(--opacidad-negro)),
@@ -8,14 +8,14 @@
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 80rem;
+  height:100vh;
   background-attachment: fixed;
 
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 768px) {
+ @media (min-width: 768px) {
   .header_imagen {
     --opacidad-negro: 0.3;
     background-image: linear-gradient(
@@ -24,12 +24,48 @@
       ),
       url(../public/img/fondo_horizontal.jpg);
   }
+}  */
+
+.header_imagen {
+  --opacidad-negro: 0.3;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, var(--opacidad-negro)),
+      rgba(0, 0, 0, var(--opacidad-negro))
+    ),
+    url(../public/img/oferti/oferta_3.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+ @media (min-width: 768px) {
+  .header_imagen {
+    --opacidad-negro: 0.3;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, var(--opacidad-negro)),
+        rgba(0, 0, 0, var(--opacidad-negro))
+      ),
+      url(../public/img/oferti/oferta_2.jpg);
+  }
+}   
 .contenido_header_imagen {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  gap: 10rem;
+
+}
+@media (min-width: 768px) {
+  .contenido_header_imagen {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
 }
 
 .contenido_header_imagen a {
@@ -57,16 +93,15 @@
   color: var(--white);
 }
 @media (min-width: 768px) {
-  .contenido_header_imagen h1{
+  .contenido_header_imagen h1 {
     font-size: 5rem;
   }
 }
 
 /* ======== CARDS ===========*/
 
-
 .main {
-  margin-top: -25rem;
+  margin-top: -15rem;
 }
 .cards {
   display: grid;
@@ -103,11 +138,8 @@
   margin-bottom: 0;
 }
 
-
-
-
 /*============= OFERTAS Y NOTICIAS===============*/
-.contenido_principal{
+.contenido_principal {
   padding: 8rem 0rem;
   display: grid;
   grid-template-rows: auto;
@@ -115,16 +147,16 @@
 }
 
 @media (min-width: 768px) {
-    .contenido_principal{
-      grid-template-columns: 1FR 1FR;
-    }
+  .contenido_principal {
+    grid-template-columns: 1FR 1FR;
+  }
 }
 
-.news h2{
-margin: 0;
-text-align: left;
-border-bottom: 3px solid var(--primary);
+.news h2 {
+  margin: 0;
+  text-align: left;
+  border-bottom: 3px solid var(--primary);
 }
-.news p{
-  text-align:justify;
+.news p {
+  text-align: justify;
 }

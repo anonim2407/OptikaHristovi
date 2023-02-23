@@ -2,12 +2,12 @@ import Layout from "@/components/layout"
 import styles from '../styles/centrove.module.css'
 import CentroveCards from "@/components/centroveCards"
 import Galeria from "@/components/galeria"
-
+import Image from "next/image"
 function Centrove() {
   return (
     <Layout
-    title={'Очни центрове'}
-    description={'Местоложение на очни центрове'}
+      title={'Очни центрове'}
+      description={'Местоложение на очни центрове'}
     >
       <main className="main">
         <div className="contenedor">
@@ -29,21 +29,89 @@ function Centrove() {
             </div>
             <div className={styles.center}>
               <h2 className='heading'>Очен център - Георги Бенковски 50</h2>
+              <div className={styles.center_image}>
+                <div>
+                  <Image
+                    src={'/img/benkovski_mag/2.jpg'}
+                    width={500}
+                    height={500}
+                    alt={'Image 1 Benkoscki'}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={'/img/benkovski_mag/1.jpg'}
+                    width={500}
+                    height={500}
+                    alt={'Image 1 Benkoscki'}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={'/img/benkovski_mag/3.jpg'}
+                    width={500}
+                    height={500}
+                    alt={'Image 1 Benkoscki'}
+                  />
+                </div>
+              </div>
 
               <div className={styles.cabinets} id={'width'}>
                 <h3 className='subheading'>Кабинет 1</h3>
-                <Galeria href={'/img/lab/lab'} cantidad={6} />
+                <Galeria href={'/img/benkovski_k1/'} cantidad={7} />
                 <h3 className='subheading'>Кабинет 2</h3>
-                <Galeria href={'/img/lab/lab'} cantidad={6} />
+                <Galeria href={'/img/benkovski_k2/'} cantidad={6} />
               </div>
 
             </div>
             <div className={styles.center}>
               <h2 className='heading'>Очен център - Дрин 11</h2>
-
+              <div className={styles.center_image}>
+                <div>
+                  <Image
+                    src={'/img/drin_mag/1.jpg'}
+                    width={500}
+                    height={500}
+                    alt={'Image 1 Benkoscki'}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={'/img/drin_mag/2.jpg'}
+                    width={500}
+                    height={500}
+                    alt={'Image 1 Benkoscki'}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={'/img/drin_mag/3.jpg'}
+                    width={500}
+                    height={500}
+                    alt={'Image 1 Benkoscki'}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={'/img/drin_mag/4.jpg'}
+                    width={500}
+                    height={500}
+                    alt={'Image 1 Benkoscki'}
+                  />
+                </div>
+                <div>
+                  <Image
+                    src={'/img/drin_mag/5.jpg'}
+                    width={500}
+                    height={500}
+                    alt={'Image 1 Benkoscki'}
+                  />
+                </div>
+              
+              </div>
               <div className={styles.cabinets} id={'width'}>
                 <h3 className='subheading'>Кабинет 1</h3>
-                <Galeria href={'/img/lab/lab'} cantidad={6} />
+                <Galeria href={'/img/drin_k1/'} cantidad={3} />
               </div>
 
             </div>

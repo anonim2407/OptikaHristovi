@@ -42,3 +42,23 @@ margin-bottom: 4rem;
   padding: 2rem;
 }
 
+.center_image{
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+    .center_image{
+     grid-template-columns: 1fr 1fr 1fr;
+     justify-items: center;
+}
+}
+
+
+.center_image img{
+  border-radius: 1rem;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+

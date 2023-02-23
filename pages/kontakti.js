@@ -10,8 +10,8 @@ function Kontakti() {
                 <div className={`contenedor ${styles.contenido}`}>
 
                     <div className={styles.cards}>
-                        <KontaktiCards text_map={'Варна ул.“Георги Бенковски“ № 50'} text_tel={'тел. 052/606 085; 0899 572 787'} />
-                        <KontaktiCards text_map={'Варна ул.“Дрин“ № 11'} text_tel={'тел. 052/696 500; 0884 25 96 55'} />
+                        <KontaktiCards text_map={'Варна ул.“Георги Бенковски“ №50'} text_tel={'тел. 052/606 085; 0899 572 787'} />
+                        <KontaktiCards text_map={'Варна ул.“Дрин“ №11'} text_tel={'тел. 052/696 500; 0884 25 96 55'} />
                     </div>
                     <News />
                 </div>

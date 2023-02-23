@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Cards from '@/components/cards'
 import News from '@/components/news'
 import Oferti from '@/components/oferti'
+import TextoOferta from '@/components/textoOferta'
 export default function Home() {
   return (
     <>
@@ -21,7 +22,7 @@ export default function Home() {
       >
         <div className={`main ${styles.header_imagen}`}>
           <div className={`contenedor ${styles.contenido_header_imagen}`}>
-            <h1>Не оставяйте за последният момент!</h1>
+            <TextoOferta/>
             <Link legacyBehavior href={'/kontakti'}><a>Към контакти</a></Link>
           </div>
         </div>
