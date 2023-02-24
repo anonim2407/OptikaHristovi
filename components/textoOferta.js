@@ -1,8 +1,9 @@
 import React from 'react'
 import styles from '../styles/textoOferta.module.css'
+
 const TextoOferta = () => {
     return (
-        <div className={styles.contenido}>
+        <div className={`animate__animated animate__backInLeft ${styles.contenido} `}>
             <div className={styles.ap1}>
                 <p>-29%</p>
             </div>

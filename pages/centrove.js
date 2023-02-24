@@ -35,7 +35,8 @@ function Centrove() {
                     src={'/img/benkovski_mag/2.jpg'}
                     width={500}
                     height={500}
-                    alt={'Image 1 Benkoscki'}
+                    alt={'Снимка Магазин Бенковски 1'}
+                    priority
                   />
                 </div>
                 <div>
@@ -43,7 +44,8 @@ function Centrove() {
                     src={'/img/benkovski_mag/1.jpg'}
                     width={500}
                     height={500}
-                    alt={'Image 1 Benkoscki'}
+                    alt={'Снимка Магазин Бенковски 2'}
+                    priority
                   />
                 </div>
                 <div>
@@ -51,16 +53,17 @@ function Centrove() {
                     src={'/img/benkovski_mag/3.jpg'}
                     width={500}
                     height={500}
-                    alt={'Image 1 Benkoscki'}
+                    alt={'Снимка Магазин Бенковски 3'}
+                    priority
                   />
                 </div>
               </div>
 
               <div className={styles.cabinets} id={'width'}>
                 <h3 className='subheading'>Кабинет 1</h3>
-                <Galeria href={'/img/benkovski_k1/'} cantidad={7} />
+                <Galeria href={'/img/benkovski_k1/'} cantidad={7} alt={'Бенковски Кабинет 1 _'} />
                 <h3 className='subheading'>Кабинет 2</h3>
-                <Galeria href={'/img/benkovski_k2/'} cantidad={6} />
+                <Galeria href={'/img/benkovski_k2/'} cantidad={6} alt={'Бенковски Кабинет 2 _'}/>
               </div>
 
             </div>
@@ -72,7 +75,8 @@ function Centrove() {
                     src={'/img/drin_mag/1.jpg'}
                     width={500}
                     height={500}
-                    alt={'Image 1 Benkoscki'}
+                    alt={'Снимка Магазин Дрин 1'}
+                    priority
                   />
                 </div>
                 <div>
@@ -80,7 +84,8 @@ function Centrove() {
                     src={'/img/drin_mag/2.jpg'}
                     width={500}
                     height={500}
-                    alt={'Image 1 Benkoscki'}
+                    alt={'Снимка Магазин Дрин 2'}
+                    priority
                   />
                 </div>
                 <div>
@@ -88,7 +93,8 @@ function Centrove() {
                     src={'/img/drin_mag/3.jpg'}
                     width={500}
                     height={500}
-                    alt={'Image 1 Benkoscki'}
+                    alt={'Снимка Магазин Дрин 3'}
+                    priority
                   />
                 </div>
                 <div>
@@ -96,7 +102,8 @@ function Centrove() {
                     src={'/img/drin_mag/4.jpg'}
                     width={500}
                     height={500}
-                    alt={'Image 1 Benkoscki'}
+                    alt={'Снимка Магазин Дрин 4'}
+                    priority
                   />
                 </div>
                 <div>
@@ -104,14 +111,15 @@ function Centrove() {
                     src={'/img/drin_mag/5.jpg'}
                     width={500}
                     height={500}
-                    alt={'Image 1 Benkoscki'}
+                    alt={'Снимка Магазин Дрин 5'}
+                    priority
                   />
                 </div>
               
               </div>
               <div className={styles.cabinets} id={'width'}>
                 <h3 className='subheading'>Кабинет 1</h3>
-                <Galeria href={'/img/drin_k1/'} cantidad={3} />
+                <Galeria href={'/img/drin_k1/'} cantidad={3} alt={'Дрин Кабинет 1 _'} />
               </div>
 
             </div>

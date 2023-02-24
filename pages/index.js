@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         <main className={styles.main}>
-          <section className={`contenedor ${styles.cards}`}>
+          <section className={`contenedor ${styles.cards} animate__animated animate__backInLeft`}>
             <Cards
               img={'icon_map.png'}
               text1={'Варна ул.“Георги Бенковски“ №50'}
@@ -52,7 +52,7 @@ export default function Home() {
 
 
 
-          <section className={`contenedor ${styles.contenido_principal}`}>
+          <section className={`contenedor  ${styles.contenido_principal}`}>
             <Oferti />
             <News />
           </section>

@@ -12,7 +12,7 @@ import Image from "next/image";
 import { EffectFade } from "swiper";
 SwiperCore.use([Navigation, Pagination, Autoplay, Virtual]);
 
-function Galeria({ href, cantidad }) {
+function Galeria({ href, cantidad, alt }) {
 const [width, setWidth]= useState()
    
 
@@ -31,7 +31,7 @@ const [width, setWidth]= useState()
         slides.push(
             <SwiperSlide key={`slide-${i}`} className={styles.swiperslide}>
                 <div className={styles.slide}>
-                    <Image src={`${href}${i}.jpg`} width={500} height={500} alt={`Image Lab_${i}`} />
+                    <Image src={`${href}${i}.jpg`} width={500} height={500} alt={`Снимка ${alt} ${i}`} />
                 </div>
             </SwiperSlide>
         );
