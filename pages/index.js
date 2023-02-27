@@ -63,7 +63,7 @@ export default function Home() {
           <section className={`contenedor  ${styles.contenido_principal} `}>
 
             <div className={styles.principal_fondos}>
-              <Link href={'#'}>
+              <Link href={'products/progresivni_ochila'}>
                 <div className={styles.image_box}>
                   <div className={`${styles.image} ${styles.img1}`}>
                     <h3>Прогресивни очила</h3>
@@ -72,7 +72,7 @@ export default function Home() {
               </Link>
 
               <div className={styles.grid_images}>
-                <Link href={'#'}>
+                <Link href={'products/kontaktni_leshti'}>
                   <div className={styles.image_box}>
                     <div className={`${styles.image} ${styles.img2}`}>
                       <h3>Контактни лещи</h3>
@@ -80,7 +80,7 @@ export default function Home() {
                   </div>
                 </Link>
 
-                <Link href={'#'}>
+                <Link href={'products/kontrol_na_kysogledstvo'}>
                   <div className={styles.image_box}>
                     <div className={`${styles.image} ${styles.img3}`}>
                       <h3>Контрол на късогледство</h3>
