@@ -3,7 +3,7 @@ import styles from '../styles/textoOferta.module.css'
 
 const TextoOferta = () => {
     return (
-        <div className={`animate__animated animate__backInLeft ${styles.contenido} `}>
+        <div className={`animate__animated animate__pulse animate__slow 2s animate__infinite infinite ${styles.contenido}  `}>
             <div className={styles.ap1}>
                 <p>-29%</p>
             </div>

@@ -6,7 +6,15 @@ import Cards from '@/components/cards'
 import News from '@/components/news'
 import Oferti from '@/components/oferti'
 import TextoOferta from '@/components/textoOferta'
+
 export default function Home() {
+  // if (typeof window !== 'undefined') {
+
+  //   window.addEventListener('DOMContentLoaded', function () {
+  //    new WOW().init()
+  //   })
+
+  // }
   return (
     <>
       <Layout
@@ -22,13 +30,13 @@ export default function Home() {
       >
         <div className={`main ${styles.header_imagen}`}>
           <div className={`contenedor ${styles.contenido_header_imagen}`}>
-            <TextoOferta/>
+            <TextoOferta />
             <Link legacyBehavior href={'/kontakti'}><a>Към контакти</a></Link>
           </div>
         </div>
 
         <main className={styles.main}>
-          <section className={`contenedor ${styles.cards} animate__animated animate__backInLeft`}>
+          <section className={`contenedor ${styles.cards} wow animate__animated animate__fadeInUp `}>
             <Cards
               img={'icon_map.png'}
               text1={'Варна ул.“Георги Бенковски“ №50'}
@@ -52,13 +60,44 @@ export default function Home() {
 
 
 
-          <section className={`contenedor  ${styles.contenido_principal}`}>
-            <Oferti />
+          <section className={`contenedor  ${styles.contenido_principal} `}>
+
+            <div className={styles.principal_fondos}>
+              <Link href={'#'}>
+                <div className={styles.image_box}>
+                  <div className={`${styles.image} ${styles.img1}`}>
+                    <h3>Прогресивни очила</h3>
+                  </div>
+                </div>
+              </Link>
+
+              <div className={styles.grid_images}>
+                <Link href={'#'}>
+                  <div className={styles.image_box}>
+                    <div className={`${styles.image} ${styles.img2}`}>
+                      <h3>Контактни лещи</h3>
+                    </div>
+                  </div>
+                </Link>
+
+                <Link href={'#'}>
+                  <div className={styles.image_box}>
+                    <div className={`${styles.image} ${styles.img3}`}>
+                      <h3>Контрол на късогледство</h3>
+                    </div>
+                  </div>
+                </Link>
+              </div>
+
+
+            </div>
+
             <News />
           </section>
         </main>
 
-      </Layout>
+
+      </Layout >
     </>
 
   )
